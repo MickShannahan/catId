@@ -1,0 +1,6 @@
+{
+  "name": "catId",
+  "version": "1.0",
+  "description": "a unique, cat oriented way to generate Id's",
+  "license": "0BSD"
+}
