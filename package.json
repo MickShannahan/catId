@@ -1,6 +1,19 @@
 {
-  "name": "catId",
-  "version": "1.0",
+  "name": "catid",
+  "version": "1.0.0",
+  "main": "catId.js",
   "description": "a unique, cat oriented way to generate Id's",
-  "license": "0BSD"
+  "author": "Mick Shannahan (mickshannahan.github.io)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MickShannahan/catId.git"
+  },
+  "license": "0BSD",
+  "bugs": {
+    "url": "https://github.com/MickShannahan/catId/issues"
+  },
+  "homepage": "https://github.com/MickShannahan/catId#readme",
+  "keywords": [
+    "catid"
+  ]
 }

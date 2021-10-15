@@ -17,7 +17,7 @@ module.exports = class Cat {
     if(noSpace)[
       full.replace(/ /g, '')
     ]
-    return 
+    return full
   }
 
   static getCat() {
