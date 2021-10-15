@@ -1,6 +1,6 @@
 {
   "name": "catid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "catId.js",
   "description": "a unique, cat oriented way to generate Id's",
   "author": "Mick Shannahan (mickshannahan.github.io)",
