@@ -1,6 +1,6 @@
 const sur = ['Mr. ', 'Lady ', 'Sir ', 'Big ', 'Professor ', 'Capitan ', 'Mayor ', 'Mc ', 'Master ', 'Prime Meowster ', 'Gran-', 'Madam ', 'Her Royal Highness ', 'Duchess ', 'Baroness ', 'Countess ', 'Mistress ', 'Vice Chancellor ', 'Elder ', 'The Venerable ', '']
-const start = ['Fizz', 'Wiggle', 'Fuzz', 'Mouse', 'Frisk', 'Scruf', 'Hairy', 'Klaus', 'Mocha', 'Mert', 'Poppy', 'Butter', 'Caramel', '', 'Potato', 'Nip', 'Bean', 'Vanilla', 'Snibbly', 'Filtch', 'Norris', 'Grumpy', 'Whisker', 'Simba', 'Teddy', 'Abraham', 'Taco', 'Bert', 'Bern', 'Tiger']
-const end = ['s', 'bum', '-buttons', 'ington', ' esquire', 'mellow', 'wumps', 'worth', ' Blackwell', ' O,neal', ' .jr', 'butt', 'smith', 'bottom', 'paws', 'loaf', 'ordinal', 'buzz', '-shakur']
+const start = ['Fizz', 'Wiggle', 'Fuzz', 'Mouse', 'Frisk', 'Scruf', 'Hairy', 'Klaus', 'Mocha', 'Mert', 'Poppy', 'Butter', 'Caramel', '', 'Potato', 'Nip', 'Bean', 'Vanilla', 'Snibbly', 'Filtch', 'Norris', 'Grumpy', 'Whisker', 'Simba', 'Teddy', 'Abraham', 'Taco', 'Bert', 'Bern', 'Tiger', 'Dima', 'Aleksandr',]
+const end = ['s', 'bum', '-buttons', 'ington', ' esquire', 'mellow', 'wumps', 'worth', ' Blackwell', ' O,neal', ' .jr', 'butt', 'smith', 'bottom', 'paws', 'loaf', 'ordinal', 'buzz', '-shakur', ' The Fierce', 'kitty',' Hobbes', '', '', ]
 const cats = ['/ᐠ｡ꞈ｡ᐟ\\ﾉ', '/ᐠ.ꞈ.ᐟ\\ﾉ', '/ᐠ_ ꞈ _ᐟ\\ﾉ', '/ᐠ .⋏. ᐟ\\ﾉ', '/ᐠﹷ ‸ ﹷ ᐟ\\ﾉ', '/ᐠ . ֑ . ᐟ\\ﾉ',
   '/ᐠܻܻ   ့⑅ܻᐟ\\', '/ᐠ𝅒_𝅒ᐟ\\ﾉ', '/ᐠ ̷  ̷𝅒 ̷‸ ̷𝅒 ̷ ᐟ\\ﾉ', '/ᐠ-ᆽ-ᐟ \\ﾉ', '/ᐠ ̥  ̮  ̥ ᐟ\\ฅ', '/ᐠ ̥    ̣̮ ̥ ᐟ\\ﾉ', '/ᐠ ̞  ‸  ̞ᐟ\\ﾉ', '(ﾐዋ ﻌ ዋﾐ)ﾉ', '(๑ↀᆺↀ๑)', '(ﾐΦ ﻌ Φﾐ)ﾉ', '(ﾐዕᆽዕﾐ)', '(˵Φ ω Φ˵)', '(ﾐዎ ﻌ ዎﾐ)ﾉ', '(^≗ω≗^)',
   '(^・x・^)', '(=｀ェ´=)', '/ᐠ=ᆽ≠ ᐟ \\∫', '(=🝦 ﻌ 🝦=)', '(=🝦 ﻌ 🝦=)', '₍⸍⸌̣ʷ̣̫⸍̣⸌₎', '=＾ᵒ⋏ᵒ＾=', '(=〃ﻌ〃=)', '=＾ㅎ ⋏ ㅎ＾=', '=＾● ⋏ ●＾=', '=＾• ⋏ •＾=', '＾⌤＾', '̳ ៱˳_˳៱ ̳ ∫']
@@ -17,7 +17,7 @@ module.exports = class Cat {
     if(noSpace)[
       full.replace(/ /g, '')
     ]
-    return full
+    return full ? full : this.getName(noSpace)
   }
 
   static getCat() {
